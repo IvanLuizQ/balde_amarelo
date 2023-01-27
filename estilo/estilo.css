@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte_principal';
+    src: url('../midia/fontes/BeatsterDemo.otf') format('opentype');
+  }
+
+/* 
+    Paleta:
+    #786829
+    #F9E79F
+    #F7D655
+    #786F4D
+    #C4AA43
+*/
+:root{
+    --cor1: #786829;
+    --cor2: #F9E79F;
+    --cor3: #F7D655;
+    --cor4: #786F4D;
+    --cor5: #C4AA43;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    body{
+        background-color: var(--cor2);
+    }
+    header{
+        color: var(--cor3);
+        background-color: black;
+        height: 85px;
+        text-align: center;
+    }
+    header h1{
+        font-family: 'fonte_principal', sans-serif;
+        font-size: 50px;
+        padding-top: 15px;
+    }
+    header img{
+        scale: 10%;
+        position:fixed;
+        top: -215px;
+        left: -200px;
+    }
+    header i.material-icons{
+        display: block;
+        scale: 200%;
+        position:fixed;
+        top: 33px;
+        left: 85vw;
+    }
+    nav{
+        margin-left: 70vw;
+        position: fixed;
+        top: 50px;
+        display: block;
+    }
+    nav a{
+        font-family: 'fonte_principal', sans-serif;
+        font-size: 25px;
+        padding-left: 15px;
+        color: var(--cor3) ;
+        text-decoration: none;
+    }
+    
+    main{
+        background-color: white;
+        width: 70vw;
+        padding: 10px;
+        margin: auto;
+    }
+@media screen and (max-width: 1170px) {
+    nav {
+        display:none;
+        background-color: white;
+        height: 150px;
+        width: 120px;
+        top: 12vh;
+        right: 5vw;
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
+        white-space: pre-wrap;
+        text-align: left;
+        
+    }
+    nav a{
+        font-size: 20px;
+        margin-left: -60px;
+    }
+}
+@media screen and (min-width: 1170px){
+    header i.material-icons{
+        display: none;
+    }
+}
+
+
+

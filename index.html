@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link rel="shortcut icon" href="midia/imagens/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Balde Amarelo</title>
+</head>
+<body>
+    <header>
+        <h1>Balde Amarelo</h1>
+        <img src="midia/imagens/balde_amarelo_transp.png" alt="Balde"/>
+        <i id="menu_cell" class="material-icons" onclick="menuCell()">menu</i>
+        <nav id="itens">
+            <a href="#">INICIO</a>
+            <a href="#">REDES SOCIAIS</a>
+            <a href="#">NOSSA AGENDA</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Quem somos nos:</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui sunt saepe veritatis. Molestias iusto quas nisi beatae, vero vitae culpa hic? Doloremque iure dicta iste totam obcaecati alias tempora tempore!. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptas facere voluptatibus est eligendi vel explicabo iste nisi laudantium suscipit excepturi, nostrum, eaque debitis blanditiis, alias consequatur laborum. Repellat, accusantium!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae tenetur natus, maxime non deserunt officia in odit. Ipsum modi, dolorum ea sapiente explicabo incidunt necessitatibus obcaecati, voluptatum esse maiores facilis?</p>
+        <h2>Qual nosso objetivo:</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, iusto voluptatem possimus dolorum necessitatibus dolor nisi! Aliquid dolorem aperiam non quisquam, molestias similique labore fugit exercitationem consequatur provident animi necessitatibus.</p>
+    </main>
+    <script>
+        function menuCell(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
