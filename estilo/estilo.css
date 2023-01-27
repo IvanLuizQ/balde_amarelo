@@ -73,28 +73,17 @@
         padding: 10px;
         margin: auto;
     }
-@media screen and (max-width: 480px) {
+@media screen  and (max-width:768px){
     header h1{
-        font-size: 20px;
+        font-size: 35px;
         padding-top: 20px;
     }
     header img{
-        scale: 5%;
+        scale: 8%;
+        margin-left: -15px;
     }
     header i.material-icons{
-        scale:100%;
-    }
-}
-@media screen and (max-width:768px){
-    header h1{
-        font-size: 45px;
-        padding-top: 20px;
-    }
-    header img{
-        scale: 10%;
-    }
-    header i.material-icons{
-        scale:150%;
+        scale:120%;
     }
 }
 @media screen and (max-width: 1170px) {
