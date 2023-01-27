@@ -73,10 +73,10 @@
         padding: 10px;
         margin: auto;
     }
-@media screen and (min-width: 480px) and (max-width:992px){
+@media screen and (min-width: 480px) and (max-width:768px){
     header h1{
-        font-size: 40px;
-        padding-top: 15px;
+        font-size: 45px;
+        padding-top: 20px;
     }
     header img{
         scale: 10%;
