@@ -55,9 +55,9 @@
     }
     nav{
         margin-left: 70vw;
-        position: fixed;
-        top: 50px;
+        position: relative;
         display: block;
+        top: -15px;
     }
     nav a{
         font-family: 'fonte_principal', sans-serif;
@@ -67,6 +67,7 @@
         text-decoration: none;
     }
     main{
+        box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
         background-color: white;
         width: 70vw;
         padding: 10px;
@@ -88,6 +89,7 @@
 @media screen and (max-width: 1170px) {
     nav {
         display:none;
+        position: fixed;
         background-color: white;
         height: 150px;
         width: 120px;
