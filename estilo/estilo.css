@@ -3,15 +3,6 @@
     font-family: 'fonte_principal';
     src: url('../midia/fontes/BeatsterDemo.otf') format('opentype');
   }
-
-/* 
-    Paleta:
-    #786829
-    #F9E79F
-    #F7D655
-    #786F4D
-    #C4AA43
-*/
 :root{
     --cor1: #786829;
     --cor2: #F9E79F;
@@ -24,97 +15,94 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-    body{
-        background: url("../midia/imagens/fundo_jornal_amarelo.jpg");
-        width: 100vw;
-        height: 100vh;
-    }
-    header{
-        color: var(--cor3);
-        background-color: black;
-        height: 85px;
-        text-align: center;
-    }
-    header h1{
-        font-family: 'fonte_principal', sans-serif;
-        font-size: 50px;
-        padding-top: 15px;
-    }
-    header img{
-        scale: 10%;
-        position:fixed;
-        top: -215px;
-        left: -200px;
-    }
-    header i.material-icons{
-        display: block;
-        scale:200%;
-        position:fixed;
-        top: 33px;
-        left: 85vw;
-    }
-    nav{
-        margin-left: 70vw;
-        position: relative;
-        display: block;
-        top: -15px;
-    }
-    nav a{
-        font-family: 'fonte_principal', sans-serif;
-        font-size: 25px;
-        padding-left: 15px;
-        color: var(--cor3) ;
-        text-decoration: none;
-    }
-    main{
-        box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
-        background-color: white;
-        width: 70vw;
-        padding: 10px;
-        margin: auto;
-    }
-@media screen  and (max-width:768px){
-    header h1{
-        font-size: 35px;
-        padding-top: 20px;
-    }
-    header img{
-        scale: 8%;
-        margin-left: -15px;
-    }
-    header i.material-icons{
-        scale:120%;
-    }
+body{
+    background: url(../midia/imagens/fundo_jornal_amarelo.jpg);
 }
-@media screen and (max-width: 1170px) {
-    nav {
-        display:none;
-        position: fixed;
+header{
+    color: var(--cor3);
+    background-color: black;
+    height: 90px;
+}
+header h1{
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'fonte_principal', sans-serif;
+  font-size: 50px;
+  padding-top: 20px;
+  margin-bottom: -35px;
+}
+header img{
+    width: 60px;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+header nav{
+    text-decoration: none;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: -25px;
+}
+header nav a{
+    font-family: 'fonte_principal', sans-serif;
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 0px 5px 0px 5px;
+    color: var(--cor3) ;
+    text-decoration: none;
+}
+header > i.material-icons{
+    position: absolute;
+    display: none;
+    font-size: 220%;
+    right: 30px;
+    top: 30px;
+}
+main{
+    margin: auto;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
+    padding: 5px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    width: 80vw;
+}
+@media screen  and (max-width:1000px){
+    header h1{
+        font-size: 40px;
+      }
+    header nav{
+        display:block;
+        position: absolute;
+        text-align: left;
         background-color: white;
         height: 150px;
         width: 120px;
-        top: 10vh;
-        right: 5vw;
+        top: 90px;
+        right: -5px;
         box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
         white-space: pre-wrap;
-        text-align: left;
-        line-height: 30px;
     }
-    nav  a{
-        position: relative;
-        top: -15px;
+   header nav  a{
+        padding-top: -10px;
         font-size: 20px;
-        margin-left: -60px;
+        margin-left: -50px;
+        line-height:30px;
+        color: black;
     }
-    nav  a:hover{
+    header nav  a:hover{
+        color: var(--cor3);
+    }
+    header img{
+        margin-top:-5px;
+        width: 7%;
+    }
+    header > i.material-icons{
+        display: block;
+    }
+}
+@media screen  and (min-width:1000px){
+    header nav a:hover{
+        background-color: var(--cor3);
+        border-radius: 10px;
         color: black;
     }
 }
-@media screen and (min-width: 1170px){
-    header i.material-icons{
-        display: none;
-    }
-}
-
-
-

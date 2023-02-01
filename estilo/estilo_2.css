@@ -1,3 +1,7 @@
-main h2{
-    text-align: center;
+
+img.insta{
+    position: static;
+    top: -200px;
+    left: -200px;
+    width: 8%;
 }
