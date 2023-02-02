@@ -89,11 +89,12 @@ main{
         color: black;
     }
     header nav  a:hover{
+        padding-top: -10px;
         color: var(--cor3);
     }
     header img{
-        margin-top:-10px;
-        width: 8%;
+        margin-top: -2%;
+        width: calc(20px + 5%);
     }
     header > i.material-icons{
         display: block;
