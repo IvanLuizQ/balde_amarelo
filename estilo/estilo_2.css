@@ -8,8 +8,8 @@ img.insta{
 div#inicio_t{
     background-color: white;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
-    width: 600px;
-    height: 400px;
+    width: 50vw;
+    height: 60vh;
     margin: auto;
     border-radius: 10px;
     text-align: center;
@@ -20,8 +20,8 @@ div#teste{
     display: none;
     background-color: white;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
-    width: 600px;
-    height: 400px;
+    width: 50vw;
+    height: 60vh;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
