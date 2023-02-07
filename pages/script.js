@@ -11,6 +11,6 @@ function inicio(){
     inicio_t.style.display = 'none'
     teste.style.display = 'block'
 }
-function teste(){
+function teste_(){
 
 }
