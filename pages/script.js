@@ -6,10 +6,11 @@ function menuCell(){
     }else{
         itens.style.display = 'block'
     }
-
 }
-
 function inicio(){
     inicio_t.style.display = 'none'
     teste.style.display = 'block'
+}
+function teste(){
+
 }

@@ -13,6 +13,7 @@ div#inicio_t{
     margin: auto;
     border-radius: 10px;
     text-align: center;
+    padding: 10px;
     margin-bottom: 20px;
 }
 div#teste{
@@ -23,7 +24,7 @@ div#teste{
     height: 400px;
     margin: auto;
     border-radius: 10px;
-    text-align: center;
+    padding: 10px;
     margin-bottom: 20px;
 }
 main h2{
