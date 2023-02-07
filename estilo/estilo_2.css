@@ -5,3 +5,29 @@ img.insta{
     left: -200px;
     width: 50px;
 }
+div#inicio_t{
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+div#teste{
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main h2{
+    font-family: 'fonte_principal', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
