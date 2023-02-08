@@ -17,6 +17,18 @@ function resultado(){
     if(a_q > b_q && a_q > c_q && a_q > d_q && a_q > e_q){
         window.alert('Abnegação')
     }
+    if(b_q > a_q && b_q > c_q && b_q > d_q && b_q > e_q){
+        window.alert('Amizade')
+    }
+    if(c_q > a_q && c_q > b_q && c_q > d_q && c_q > e_q){
+        window.alert('Franqueza')
+    }
+    if(d_q > a_q && d_q > b_q && d_q > c_q && d_q > e_q){
+        window.alert('Audácia')
+    }
+    if(e_q > a_q && e_q > b_q && e_q > c_q && e_q > d_q){
+        window.alert('Erudição')
+    }
 }
 function inicio(){
     var p = document.getElementById('q_p')
