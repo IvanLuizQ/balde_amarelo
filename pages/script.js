@@ -13,6 +13,11 @@ function menuCell(){
         itens.style.display = 'block'
     }
 }
+function resultado(){
+    if(a_q > b_q && a_q > c_q && a_q > d_q && a_q > e_q){
+        window.alert('Abnegação')
+    }
+}
 function inicio(){
     var p = document.getElementById('q_p')
     var a = document.getElementById('q_a')
@@ -99,9 +104,7 @@ function questa(){
     a_q= a_q+1
     pergunta= pergunta+1
     if( pergunta > 10){
-        inicio_t.style.display = 'block'
-        teste.style.display = 'none'
-        pergunta= 1
+        resultado()
     }else{
         inicio()
     }
@@ -110,9 +113,7 @@ function questb(){
     b_q= b_q+1
     pergunta= pergunta+1
     if( pergunta > 10){
-        inicio_t.style.display = 'block'
-        teste.style.display = 'none'
-        pergunta= 1
+        resultado()
     }else{
         inicio()
     }
@@ -121,9 +122,7 @@ function questc(){
     c_q= c_q+1
     pergunta= pergunta+1
     if( pergunta > 10){
-        inicio_t.style.display = 'block'
-        teste.style.display = 'none'
-        pergunta= 1
+        resultado()
     }else{
         inicio()
     }
@@ -132,9 +131,7 @@ function questd(){
     d_q= d_q+1
     pergunta= pergunta+1
     if( pergunta > 10){
-        inicio_t.style.display = 'block'
-        teste.style.display = 'none'
-        pergunta= 1
+        resultado()
     }else{
         inicio()
     }
@@ -143,9 +140,7 @@ function queste(){
     e_q= e_q+1
     pergunta= pergunta+1
     if( pergunta > 10){
-        inicio_t.style.display = 'block'
-        teste.style.display = 'none'
-        pergunta= 1
+        resultado()
     }else{
         inicio()
     }
