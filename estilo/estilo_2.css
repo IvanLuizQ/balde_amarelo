@@ -27,6 +27,10 @@ div#teste{
     padding: 10px;
     margin-bottom: 20px;
 }
+div#teste p.per:hover{
+    color: white;
+    background-color: black;
+}
 main h2{
     font-family: 'fonte_principal', sans-serif;
     text-align: center;
