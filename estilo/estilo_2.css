@@ -1,4 +1,15 @@
-
+@charset "UTF-8";
+@font-face {
+    font-family: 'fonte_principal';
+    src: url('../midia/fontes/BeatsterDemo.otf') format('opentype');
+  }
+:root{
+    --cor1: #786829;
+    --cor2: #F9E79F;
+    --cor3: #F7D655;
+    --cor4: #786F4D;
+    --cor5: #C4AA43;
+}
 img.insta{
     position: static;
     top: -200px;
@@ -31,8 +42,34 @@ div#teste p.per:hover{
     color: white;
     background-color: black;
 }
+input{
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    background-color: #F7D655;
+    position: relative;
+    height: 50px;
+    width: 100px;
+    border: none;
+    bottom: -45vh;
+    right: -1vw;
+}
+p#q_p{
+    font-weight: bolder;
+    font-size: 110%;
+}
+p.per{
+    margin-top: 20px;
+    font-size: 105%;
+}
 main h2{
     font-family: 'fonte_principal', sans-serif;
     text-align: center;
     margin: 20px;
+}
+@media screen  and (max-width:768px){
+    p.per{
+        font-size: 90%;
+    }
 }
