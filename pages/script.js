@@ -4,6 +4,7 @@ var b_q=0
 var c_q=0
 var d_q=0
 var e_q=0
+var casa = 'Casa'
 
 function menuCell(){
 
@@ -14,21 +15,44 @@ function menuCell(){
     }
 }
 function resultado(){
+    var p = document.getElementById('q_p')
+    var a = document.getElementById('q_a')
+    var b = document.getElementById('q_b')
+    var c = document.getElementById('q_c')
+    var d = document.getElementById('q_d')
+    var e = document.getElementById('q_e')
+    var r = document.getElementById('resul')
+    var f = document.getElementById('frase')
+    var i = document.getElementById('inicio_p')
+    
+    p.style.display = 'none'
+    a.style.display = 'none'
+    b.style.display = 'none'
+    c.style.display = 'none'
+    d.style.display = 'none'
+    e.style.display = 'none'
+    r.style.display = 'block'
+    f.style.display = 'block'
+    i.style.textAlign = 'center'
+
     if(a_q > b_q && a_q > c_q && a_q > d_q && a_q > e_q){
-        window.alert('Abnegação')
+        casa = 'Abnegação'
+    }else if(b_q > a_q && b_q > c_q && b_q > d_q && b_q > e_q){
+        casa = 'Amizade'
+    }else if(c_q > a_q && c_q > b_q && c_q > d_q && c_q > e_q){
+        casa = 'Franqueza'
+    }else if(d_q > a_q && d_q > b_q && d_q > c_q && d_q > e_q){
+        casa= 'Audácia'
+    }else if(e_q > a_q && e_q > b_q && e_q > c_q && e_q > d_q){
+        casa = 'Erudição'
+    }else{
+        casa = 'Divergente'
     }
-    if(b_q > a_q && b_q > c_q && b_q > d_q && b_q > e_q){
-        window.alert('Amizade')
-    }
-    if(c_q > a_q && c_q > b_q && c_q > d_q && c_q > e_q){
-        window.alert('Franqueza')
-    }
-    if(d_q > a_q && d_q > b_q && d_q > c_q && d_q > e_q){
-        window.alert('Audácia')
-    }
-    if(e_q > a_q && e_q > b_q && e_q > c_q && e_q > d_q){
-        window.alert('Erudição')
-    }
+
+    r.innerHTML = `Sua facção  é ${casa}, parabéns!`
+
+    console.log(`A:${a_q} B:${b_q} C:${c_q} D:${d_q} E:${e_q}`)
+    console.log(`Facção: ${casa}`)
 }
 function inicio(){
     var p = document.getElementById('q_p')
@@ -36,9 +60,18 @@ function inicio(){
     var b = document.getElementById('q_b')
     var c = document.getElementById('q_c')
     var d = document.getElementById('q_d')
-    var e = document.getElementById('q_e') 
+    var e = document.getElementById('q_e')
+    var btt = document.getElementById('btt')
+    var i = document.getElementById('inicio_p')
+    p.style.display = 'block'
+    a.style.display = 'block'
+    b.style.display = 'block'
+    c.style.display = 'block'
+    d.style.display = 'block'
+    e.style.display = 'block'
+    i.style.textAlign = 'left'
+    btt.style.display = 'none'
     inicio_t.style.display = 'none'
-    teste.style.display = 'block'
 
     if(pergunta == 1){
         p.innerHTML = `${pergunta}: Na sua opinião, qual é o maior problema da humanidade?`

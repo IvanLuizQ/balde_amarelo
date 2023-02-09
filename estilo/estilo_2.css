@@ -16,7 +16,7 @@ img.insta{
     left: -200px;
     width: 50px;
 }
-div#inicio_t{
+div#inicio_p{
     background-color: white;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
     width: 70vw;
@@ -27,22 +27,11 @@ div#inicio_t{
     padding: 10px;
     margin-bottom: 20px;
 }
-div#teste{
-    display: none;
-    background-color: white;
-    box-shadow: 1px 1px 10px rgba(0,0,0,0.40);
-    width: 70vw;
-    height: 60vh;
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
+div#inicio_p p.per:hover{
+    background-color: var(--cor3);
+    border-radius: 5px;
 }
-div#teste p.per:hover{
-    color: white;
-    background-color: black;
-}
-input{
+input#btt{
     border-radius: 10px;
     font-weight: bolder;
     font-size: 20px;
@@ -56,12 +45,21 @@ input{
     right: -1vw;
 }
 p#q_p{
+    display: none;
     font-weight: bolder;
     font-size: 110%;
 }
 p.per{
+    display: none;
+    padding: 2px;
     margin-top: 20px;
     font-size: 105%;
+}
+h3#resul{
+    display: none;
+}
+p#frase{
+    display: none;
 }
 main h2{
     font-family: 'fonte_principal', sans-serif;
@@ -69,7 +67,11 @@ main h2{
     margin: 20px;
 }
 @media screen  and (max-width:768px){
+    p#q_p{
+        font-size: 100%;
+    }
     p.per{
-        font-size: 90%;
+        margin-top: 14px;
+        font-size: 95%;
     }
 }
