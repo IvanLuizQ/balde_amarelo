@@ -24,6 +24,8 @@ function resultado(){
     var r = document.getElementById('resul')
     var f = document.getElementById('frase')
     var i = document.getElementById('inicio_p')
+    var btf = document.getElementById('btf')
+    var btt = document.getElementById('btt')
     
     p.style.display = 'none'
     a.style.display = 'none'
@@ -34,6 +36,9 @@ function resultado(){
     r.style.display = 'block'
     f.style.display = 'block'
     i.style.textAlign = 'center'
+    btf.style.display = 'block'
+    btt.style.right = '-28vw'
+    btf.style.right = '-28vw'
 
     if(a_q > b_q && a_q > c_q && a_q > d_q && a_q > e_q){
         casa = 'Abnegação'
@@ -50,6 +55,7 @@ function resultado(){
     }
 
     r.innerHTML = `Sua facção  é ${casa}, parabéns!`
+    f.innerHTML = 'Em construção'
 
     console.log(`A:${a_q} B:${b_q} C:${c_q} D:${d_q} E:${e_q}`)
     console.log(`Facção: ${casa}`)
@@ -145,6 +151,26 @@ function inicio(){
         e.innerHTML = 'E: Inteligência.'
     }
 }
+function reinicio(){
+    var p = document.getElementById('q_p')
+    var a = document.getElementById('q_a')
+    var b = document.getElementById('q_b')
+    var c = document.getElementById('q_c')
+    var d = document.getElementById('q_d')
+    var e = document.getElementById('q_e')
+    var r = document.getElementById('resul')
+    var f = document.getElementById('frase')
+    var btt = document.getElementById('btt')
+    var btf = document.getElementById('btf')
+    var i = document.getElementById('inicio_p')
+
+    btt.style.display = 'block'
+    inicio_t.style.display = 'block'
+    btf.style.display = 'none'
+    r.style.display = 'none'
+    f.style.display = 'none'
+    pergunta = 1
+}    
 function questa(){
     a_q= a_q+1
     pergunta= pergunta+1
