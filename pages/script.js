@@ -43,15 +43,20 @@ function resultado(){
 
     if(a_q > b_q && a_q > c_q && a_q > d_q && a_q > e_q){
         casa = 'Abnegação'
+        fra = '"Abnegação " é uma das cinco facções no mundo de Divergente, é a única facção dedicada ao altruísmo , esquecendo de si para o bem dos outros. Sua substância na  Cerimônia de Escolha são pedras cinzentas.'
         
     }else if(b_q > a_q && b_q > c_q && b_q > d_q && b_q > e_q){
         casa = 'Amizade'
+        fra = 'Amizade é uma das cinco facções no mundo de divergente.É dedicada à paz, à bondade, ao perdão, à confiança, à autossuficiência e à neutralidade. Foi formada por aqueles que culparam a guerra e a luta por falhas da natureza humana. Sua substância na Cerimônia de Escolha é a terra.'
     }else if(c_q > a_q && c_q > b_q && c_q > d_q && c_q > e_q){
         casa = 'Franqueza'
+        fra = 'Franqueza é uma das cinco facções no mundo de divergente. É dedicada à Verdade, à Justiça e à Imparcialidade. Foi formada por aqueles que culparam a duplicidade por falhas da natureza humana. Sua substância na Cerimônia de Escolha são lascas uniformes de vidro.'
     }else if(d_q > a_q && d_q > b_q && d_q > c_q && d_q > e_q){
         casa= 'Audácia'
+        fra = 'Audácia é uma das cinco facções no mundo de Divergente. É dedicada a coragem, bravura e destemor. Ela tenta lutar contra a covardia, dando a preparação e a capacidade de agir durante o medo aos seus membros.'
     }else if(e_q > a_q && e_q > b_q && e_q > c_q && e_q > d_q){
         casa = 'Erudição'
+        fra = 'Erudição é uma das cinco facções no mundo de divergente.É dedicada preservação da lógica e conhecimento. Foi formada por aqueles que culparam a ignorância por falhas da natureza humana. Sua substância na Cerimônia de Escolha é água.'
     }else{
         casa = 'Divergente'
         fra = 'Diz-se que a mente dos divergentes "move em várias direções" e não pode ser confinada a um jeito de pensar, o que significa que eles não podem ser controlados. Eles são especiais e serão mortos se forem encontrados.'
