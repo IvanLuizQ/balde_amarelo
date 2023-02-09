@@ -5,6 +5,7 @@ var c_q=0
 var d_q=0
 var e_q=0
 var casa = 'Casa'
+var fra = 'Em contrução'
 
 function menuCell(){
 
@@ -42,6 +43,7 @@ function resultado(){
 
     if(a_q > b_q && a_q > c_q && a_q > d_q && a_q > e_q){
         casa = 'Abnegação'
+        
     }else if(b_q > a_q && b_q > c_q && b_q > d_q && b_q > e_q){
         casa = 'Amizade'
     }else if(c_q > a_q && c_q > b_q && c_q > d_q && c_q > e_q){
@@ -52,10 +54,11 @@ function resultado(){
         casa = 'Erudição'
     }else{
         casa = 'Divergente'
+        fra = 'Diz-se que a mente dos divergentes "move em várias direções" e não pode ser confinada a um jeito de pensar, o que significa que eles não podem ser controlados. Eles são especiais e serão mortos se forem encontrados.'
     }
 
     r.innerHTML = `Sua facção  é ${casa}, parabéns!`
-    f.innerHTML = 'Em construção'
+    f.innerHTML = `${fra}`
 
     console.log(`A:${a_q} B:${b_q} C:${c_q} D:${d_q} E:${e_q}`)
     console.log(`Facção: ${casa}`)
@@ -170,6 +173,11 @@ function reinicio(){
     r.style.display = 'none'
     f.style.display = 'none'
     pergunta = 1
+    a_q=0
+    b_q=0
+    c_q=0
+    d_q=0
+    e_q=0
 }    
 function questa(){
     a_q= a_q+1
